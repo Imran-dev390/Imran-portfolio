@@ -23,20 +23,54 @@ let aboutHeading = document.querySelector(".aboutHeading");
 //})
 // Navbar after Toggle #1F2937 body #111827
 // Toggle Logic
-projectImages.forEach((item,index)=>{
+/*projectImages.forEach((item,index)=>{
   item.addEventListener("click",()=>{
    // alert("clicked on Scale")
      item.style.transform = 'scale(200%)';
   })
+
   item.addEventListener("mouseleave",()=>{
     item.style.transform="scale(100%)";
   })
-})
+})*/
 let flag = 0;
+let heading = document.querySelectorAll('.heading');
+
+
+//To modify your JavaScript so that the image scaling behavior changes depending on the screen size (smaller screens use 130% scale or fit, and larger screens use 200%), you can use window.innerWidth to determine the screen width and adjust the scaling accordingly. Here’s an updated version of your script:
+//
+//javascript
+//Copy
+//const projectImages = document.querySelectorAll('.project-image'); // Assuming images have this class
+
+projectImages.forEach((item, index) => {
+  // Function to set the scale based on the screen size
+  const getScaleValue = () => {
+    if (window.innerWidth < 768) {  // For small screens (adjust the width as needed)
+      return 'scale(130%)';  // Scale for smaller screens
+    } else {
+      return 'scale(200%)';  // Scale for larger screens
+    }
+  };
+
+  item.addEventListener("click", () => {
+    // Apply scaling based on screen size
+    item.style.transform = getScaleValue();
+  });
+
+  item.addEventListener("mouseleave", () => {
+    // Reset scaling to normal when mouse leaves
+    item.style.transform = 'scale(100%)';
+  });
+})
+
 toggle.addEventListener("click",()=>{
     if(flag==0){
     header.style.background="#1F2937";
     header.style.borderRadius="0px";
+    heading.forEach((item,idx)=>{
+        item.style.color="white";
+    })
     HomeHeading.style.color="white";
 
     root.style.background="#111827";
@@ -53,6 +87,9 @@ toggle.addEventListener("click",()=>{
     header.style.borderRadius="30%"
     HomeHeading.style.color="black";
     root.style.background="#fff";
+    heading.forEach((item,idx)=>{
+      item.style.color="black";
+  })
     aboutHeading.style.color="black";
     TestimonialHeading.style.color="black";
     aboutPara.style.color="black";
@@ -124,9 +161,9 @@ function submitAction(){
   let name = document.getElementById("name");
   let email = document.getElementById("email");
   let message = document.getElementById("message");
-   name.innerHTML="";
-   email.innerHTML="";
-   message.innerHTML="";
+   name.value="";
+   email.value="";
+   message.value="";
 }
 
 
