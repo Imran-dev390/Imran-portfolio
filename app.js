@@ -120,7 +120,7 @@ gsap.to(".sideImg", {duration: 4, rotation: 360});
     }
 })*/
 function submitAction(){
-  alert("Working")
+//  alert("Working")
   let name = document.getElementById("name");
   let email = document.getElementById("email");
   let message = document.getElementById("message");
