@@ -47,7 +47,7 @@ projectImages.forEach((item, index) => {
   // Function to set the scale based on the screen size
   const getScaleValue = () => {
     if (window.innerWidth < 768) {  // For small screens (adjust the width as needed)
-      return 'scale(130%)';  // Scale for smaller screens
+      return 'scale(100%)';  // Scale for smaller screens
     } else {
       return 'scale(200%)';  // Scale for larger screens
     }
@@ -161,9 +161,6 @@ function submitAction(){
   let name = document.getElementById("name");
   let email = document.getElementById("email");
   let message = document.getElementById("message");
-   name.value="";
-   email.value="";
-   message.value="";
 }
 
 
