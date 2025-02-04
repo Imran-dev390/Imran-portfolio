@@ -75,7 +75,7 @@ toggle.addEventListener("click",()=>{
 
     root.style.background="#111827";
     aboutHeading.style.color="white";
-    TestimonialHeading.style.color="white";
+    testmon.style.color="white";
     root.style.color="white";
     aboutPara.style.color="#D4E9EF";
     li.forEach((link,index)=>{
@@ -91,7 +91,7 @@ toggle.addEventListener("click",()=>{
       item.style.color="black";
   })
     aboutHeading.style.color="black";
-    TestimonialHeading.style.color="black";
+    testmon.style.color="black";
     aboutPara.style.color="black";
     li.forEach((link,index)=>{
         link.style.color="black";
