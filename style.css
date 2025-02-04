@@ -1,0 +1,277 @@
+
+.loader{
+    display: none;
+}
+body,html{
+    height: 100%;
+}
+header{
+    /*position: relative;*/
+   /*position: sticky;
+   z-index: 1000;
+   top: 0;
+   width: 100%;*/
+}
+
+.logo{
+    color:  #7E22CE;
+}
+#aboutPara{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+}
+li{
+    transition: all 0.2s;
+}
+li:hover{
+    border-bottom: 2px solid #7E22CE;
+    padding-bottom: 2px;
+}
+.side-img{
+    border-radius: 10px;
+    height: 95vh;
+    aspect-ratio: 4/4;
+    background-position: center;
+    object-fit: cover;
+    border-radius: 20%;
+    width: 80vw;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#root{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#element{
+    overflow: hidden;
+    max-width: 100%;
+    height: 5px;
+}
+
+.Skill-list{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.skill{
+    padding: 4px;
+    border: 1px solid black;
+    width: 365px;
+    height: 10px;
+    background-color: red;
+}
+.skillitem{
+    display: flex;
+    align-items: center;
+}
+.contact-section{
+    background-image: url(right_img.png);
+}
+.loader{
+    height: 100vh;
+    width: 100vw;
+}
+.spinner{
+    border: 5px solid lightgray;
+    border-top: 5px solid blue;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.t5{
+    width: 200px;
+    background-color: cyan;
+}
+.htmlCss1{
+    width: 45vw;
+    background: red;
+    height: 27px;
+}
+.htmlCss2{
+    width: 25vw;
+    background: cyan;
+    height: 27px;
+}
+.htmlCss3{
+    width: 40vw;
+    background: orangered;
+    height: 27px;
+}
+#hamburger{
+    display: none;
+}
+.htmlCss4{
+    width: 35vw;
+    background: orange;
+    height: 27px;
+}
+.htmlCss5{
+    width: 30vw;
+    background: black;
+    height: 27px;
+}
+.container {
+    width: 60%;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+}
+h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    margin: 10px 0;
+}
+.progress {
+    height: 30px;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+    font-weight: bold;
+}
+.html { background-color: #e44d26; width: 90%; }
+.css { background-color: #2965f1; width: 85%; }
+.javascript { background-color: #f0db4f; width: 80%; }
+.bootstrap { background-color: #563d7c; width: 70%; }
+.tailwind { background-color: #38b2ac; width: 75%; }
+.react { background-color: #6c797c; width: 80%; }
+
+body::-webkit-scrollbar{
+    overflow: hidden;
+}
+input{
+    border-radius: 10px;
+}
+#toggle{
+    display: block;
+}
+.left{
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+}
+.html{
+    animation-name: bounce;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+@keyframes bounce {
+    from{
+        transform: rotate(10deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes anim {
+    from{
+        transform: translate(-90%,-5%);
+    }
+    to{
+        transform: translate(10%,5%);
+    }
+}
+@media screen and (max-width:800px){
+     #home{
+        gap: 8px;
+        flex-direction: column;
+     }
+     header{
+        flex-wrap: wrap;
+     }
+     #element{
+        position: relative;  
+        overflow: hidden;
+        height: 5px;
+    }
+     .sideImg{
+        display: none;
+        border-radius: 500px;
+        height: 210vh;
+        aspect-ratio: 4/4;
+        background-position: center;
+        object-fit: cover;
+        width: 80vw;
+     }
+}
+@media screen  and (max-width:400px){
+    header{
+        position: relative;
+        flex-direction: column;
+    }
+    .pt{
+        width: 100vw;
+    }
+       .con{
+        color: black;
+       }
+    .test{
+    
+    }
+    .testmonialPara{
+        width: 55vw;
+        font-size: 16px
+    }
+    #hamburger{
+        display: block;
+    }
+    #aboutPara{
+        width: 95vw;
+    }
+     ul{
+        flex-direction: column;
+     }
+     .sideImg{
+        display: none;
+        height: 210vh;
+          aspect-ratio: 4/4;
+        object-fit: cover;
+        width: 80vw;
+        border-radius: 0px;
+
+     }
+     #element{
+        font-size: 28px;
+     }
+}
+#preloader{
+    background: #000;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+ }
+ .spinner{
+    border: 5px solid blue;
+    border-top: 5px solid grey;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+ }
